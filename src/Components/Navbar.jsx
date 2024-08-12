@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = ({ filterNews }) => {
   const [show, setShow] = useState(false);
@@ -19,7 +19,7 @@ const Navbar = ({ filterNews }) => {
         <li onClick={() => filterNews("sports")}>SPORTS</li>
         <li onClick={() => filterNews("technology")}>TECHNOLOGY</li>
       </ul>
-      <GiHamburgerMenu onClick={() => setShow(!show)} />
+      <RxHamburgerMenu onClick={() => setShow(!show)} />
     </nav>
   );
 };
